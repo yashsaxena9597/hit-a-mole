@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Hit a Mole!</title>
+
+</head>
+<style type="text/css">
+	.mole{ 
+
+		position: relative;
+         background-image:  url(mole.png);
+
+         height: 25vh;
+         background-size: contain;
+         background-repeat: no-repeat;
+          width: 15vh;
+          margin-left:25%;
+	}
+    .score{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+</style>
+
+<body style="text-align: center;background-image: url(bg.jpg);background-size: cover;background-repeat: no-repeat;height: 100vh; " onload="print()" >
+    <h1>Hit-a-mole!</h1>
+    <button style="display: none; margin-left: 45%;"id="stop" onclick="stop()">Stop!</button>
+     
+    <button onClick="Startgame()" id="lev">Start!</button> 
+
+   
+    <h2> Score</h2>
+
+    <h2 class="score" style="">0</h2>
+    <h2 style="color: red       ;font-weight: bold; font-size: 30px;">  High Score</h2>
+
+    <h2  id="high"  style="color: red">0</h2>
+    
+    
+  <div class="container" id="game" style="display: grid; grid-template-rows: 30% 30% 30% ;grid-template-columns:  45% 45%45% ;position: absolute;padding-left: 10%;margin-top: 5%; ">
+    <div>
+        <div class="" style="background-image: url(hole.png);background-size: contain;background-repeat: no-repeat;position: relative;height: 25vh; width: 25vh;">
+        	
+            <div class="as" id="0" style=""  onclick="count()" >
+            	
+            </div></div>
+        </div>
+        <div>
+          <div class="" style="background-image: url(hole.png);background-size: contain;background-repeat: no-repeat;position: relative;height: 25vh; width: 25vh;padding: 2%;">
+        	
+            <div class="as" id="1" style="" onclick="count()" >
+            	
+            </div>
+            </div>
+        </div>
+        <div>
+         <div class="" style="background-image: url(hole.png);background-size: contain;background-repeat: no-repeat;position: relative;height: 25vh; width: 25vh;">
+        	
+            <div class="as" id="2" style="" onclick="count()" >
+            	
+            </div>
+        </div></div>
+        <div>
+         <div class="" style="background-image: url(hole.png);background-size: contain;background-repeat: no-repeat;position: relative;height: 25vh; width: 25vh;">
+        	
+            <div class="as" id="3" style="" onclick="count()">
+            	
+            </div>
+        </div>
+        </div>
+        <div>
+         <div class="" style="background-image: url(hole.png);background-size: contain;background-repeat: no-repeat;position: relative;height: 25vh; width: 25vh;">
+        	
+            <div class="as" id="4" style="" onclick="count()">
+            	
+            </div>
+        </div>
+        </div>
+        <div>
+         <div class="" style="background-image: url(hole.png);background-size: contain;background-repeat: no-repeat;position: relative; height: 25vh; width: 25vh;">
+        	
+            <div class="as" id="5" style=""onclick="count()" >
+            	
+
+            </div>
+            </div>
+        </div>
+
+    </div>
+     <script type="text/javascript" src="hit.js"></script>
+</body>
+
+</html>
